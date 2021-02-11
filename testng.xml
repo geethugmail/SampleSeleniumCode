@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sandbox" parallel="tests" thread-count="2">
+  <!--<listeners>
+  	<listener class-name="utils.ListenerClass"/>
+	<listener class-name="utils.ExtentReporterNG" />
+  </listeners>-->
+  <test name="dockerTestFirefox">
+        <classes>
+            <class name="sandbox.DockerTestFirefox"/>
+        </classes>
+    </test>
+    
+     <test name="dockerTestChrome">
+        <classes>
+            <class name="sandbox.DockerTestChrome"/>
+        </classes>
+    </test>
+    
+ </suite> <!-- Suite -->
