@@ -1,4 +1,4 @@
-FROM selenium/node-chrome:3.6.0
+FROM markhobson/maven-chrome:jdk-8
 
 ENV HOME=/home/seluser
 
