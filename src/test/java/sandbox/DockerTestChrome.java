@@ -14,7 +14,7 @@ public class DockerTestChrome {
 	@Test
 	public void loadUrl() throws MalformedURLException, InterruptedException {
 		
-		DesiredCapabilities cap= new DesiredCapabilities();
+// 		DesiredCapabilities cap= new DesiredCapabilities();
 // 		cap.setBrowserName(BrowserType.CHROME);
 		ChromeOptions options = new ChromeOptions().setHeadless(true);	
 		WebDriver driver = new ChromeDriver(options);
