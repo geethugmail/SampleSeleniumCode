@@ -17,8 +17,10 @@ public class DockerTestChrome {
 	public void loadUrl() throws MalformedURLException, InterruptedException {
 		
 		DesiredCapabilities cap= new DesiredCapabilities();
-		cap.setBrowserName(BrowserType.CHROME);
-		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
+// 		cap.setBrowserName(BrowserType.CHROME);
+		ChromeOptions options = new ChromeOptions().setHeadless(true);	
+		WebDriver driver = new ChromeDriver(options);
+// 		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		driver.get("https://buycloud.telstra.com");
 		driver.findElement(By.partialLinkText("Log")).click();
 		Thread.sleep(5000);
