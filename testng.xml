@@ -5,11 +5,11 @@
   	<listener class-name="utils.ListenerClass"/>
 	<listener class-name="utils.ExtentReporterNG" />
   </listeners>-->
-  <test name="dockerTestFirefox">
+  <!--<test name="dockerTestFirefox">
         <classes>
             <class name="sandbox.DockerTestFirefox"/>
         </classes>
-    </test>
+    </test>-->
     
      <test name="dockerTestChrome">
         <classes>
