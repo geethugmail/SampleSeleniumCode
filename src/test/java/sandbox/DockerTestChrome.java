@@ -17,6 +17,7 @@ public class DockerTestChrome {
 // 		DesiredCapabilities cap= new DesiredCapabilities();
 // 		cap.setBrowserName(BrowserType.CHROME);
 		ChromeOptions options = new ChromeOptions().setHeadless(true);	
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/resources/chromedriver.exe");
 		WebDriver driver = new ChromeDriver(options);
 // 		WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),cap);
 		driver.get("https://buycloud.telstra.com");
