@@ -1,4 +1,4 @@
-selenium/standalone-chrome
+FROM selenium/standalone-chrome
 
 ENV HOME=/home/seluser
 
